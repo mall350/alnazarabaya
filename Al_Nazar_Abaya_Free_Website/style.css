@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+:root{
+  --black:#090909; --dark:#111; --gold:#c7a15a; --cream:#f4efe6; --muted:#aaa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:#fff;font-family:Montserrat,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(9,9,9,.88);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.logo{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:2px;font-weight:700}.logo span{font-size:14px;letter-spacing:4px;color:var(--gold);margin-left:7px}
+nav{display:flex;gap:32px;font-size:13px;text-transform:uppercase;letter-spacing:1px}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 9% 80px;background:linear-gradient(90deg,rgba(0,0,0,.94),rgba(0,0,0,.45)),url("images/hero.svg") center/cover no-repeat}
+.hero-content{max-width:680px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:4px;font-weight:600;margin-bottom:15px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:1.05}
+h1{font-size:clamp(60px,9vw,110px)}h1 span{color:var(--gold)}
+.hero-text{max-width:570px;color:#d0d0d0;margin:25px 0 32px;font-size:15px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;padding:14px 25px;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:600;border:1px solid var(--gold);transition:.25s}.gold{background:var(--gold);color:#090909}.gold:hover{background:#e0bf78}.outline{color:#fff}.outline:hover{background:#fff;color:#000}
+.intro{text-align:center;padding:100px 8%;background:var(--cream);color:#151515}.intro .eyebrow{color:#92713b}.intro h2{font-size:55px;margin-bottom:15px}.intro>p:last-child{max-width:650px;margin:auto;color:#555}
+.section{padding:100px 7%}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.section-heading h2,.contact h2{font-size:55px}.section-heading>p{max-width:380px;color:#999;font-size:13px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:#121212;border:1px solid #222;overflow:hidden}.product-img{aspect-ratio:4/5;background:#222 center/cover no-repeat}.product-info{padding:20px}.product-info h3{font-size:28px}.price{color:var(--gold);margin:7px 0 15px}.order{display:inline-block;border-bottom:1px solid var(--gold);color:#ddd;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;padding-bottom:4px}
+.about{padding:120px 7%;background:linear-gradient(90deg,#111 0%,#111 55%,#0a0a0a 100%)}.about-card{max-width:650px}.about h2{font-size:58px;margin-bottom:22px}.about p:not(.eyebrow){color:#aaa;margin-bottom:25px}.text-link{color:var(--gold);font-size:12px;letter-spacing:1px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #222;border-bottom:1px solid #222}.features>div{padding:55px 7%;border-right:1px solid #222}.features>div:last-child{border:0}.features strong{color:var(--gold);font-size:12px}.features h3{font-size:30px;margin:12px 0}.features p{color:#888;font-size:13px}
+.contact{text-align:center;padding:110px 7%;background:var(--cream);color:#111}.contact .eyebrow{color:#92713b}.contact h2{margin-bottom:15px}.contact>p:not(.eyebrow){color:#666;margin-bottom:25px}.large{font-size:12px;padding:16px 30px}.socials{display:flex;justify-content:center;gap:25px;margin-top:35px;font-size:12px;text-transform:uppercase;letter-spacing:1px}.socials a:hover{color:#92713b}
+footer{padding:40px 7%;display:flex;justify-content:space-between;align-items:center;color:#777;font-size:11px}footer .logo{color:#fff}
+@media(max-width:800px){nav{display:none}.menu{display:block}.header.open nav{display:flex;position:absolute;top:78px;left:0;right:0;background:#090909;flex-direction:column;padding:25px 7%;gap:18px}.hero{padding-left:7%;padding-right:7%}.products{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr}.features>div{border-right:0;border-bottom:1px solid #222}.section-heading{display:block}.section-heading>p{margin-top:15px}.intro h2,.section-heading h2,.contact h2,.about h2{font-size:43px}}
+@media(max-width:520px){.products{grid-template-columns:1fr}.hero{min-height:90vh}.hero h1{font-size:58px}.intro,.section,.about,.contact{padding-top:75px;padding-bottom:75px}footer{display:block;text-align:center}.logo{margin-bottom:12px}}
